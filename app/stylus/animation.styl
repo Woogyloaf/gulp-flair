@@ -1,0 +1,76 @@
+$line-width = 195px;
+$line-height = 3px;
+
+
+.animation
+  width 200px
+  height 200px
+  margin 0 auto;
+  // background #ccc
+  position relative
+.circlebox
+	width 50px
+	margin 0 auto
+.circle
+  position absolute
+  width 50px
+  height 50px
+  top: 50%;
+  transform: translateY(-50%)
+  border-radius 50%
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(48,48,48,0.84) 16%,rgba(91,91,91,0.69) 31%,rgba(255,255,255,0) 100%); /* W3C */
+.line,
+.line2,
+{
+  width $line-width
+  height $line-height
+  top: 50%;
+  transform: translateY(-50%)
+  position absolute
+  border 2	px solid white
+  border-radius 16em/1em
+  background white;	
+  // background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(143,143,143,1) 100%);
+}
+.smaller
+	width 170px
+	margin 0 auto
+.moresmaller
+	width 100px
+	margin 0 auto
+.line3,
+.line4
+  margin 0 auto
+  width 170px
+  height ($line-height/5)
+  top 100px;
+  position absolute
+  border 1.5px solid white
+  border-radius 16em/1em
+  top: 50%;
+  
+.line5,
+.line6
+  margin 0 auto
+  width 100px
+  height ($line-height/5)
+  top 100px;
+  position absolute
+  border 1px solid white
+  border-radius 16em/1em
+  top: 50%;
+  transform: translateY(-50%)
+.line2
+  transform: rotate(96deg)
+.line2
+  transform: rotate(96deg)
+.line3
+  transform: rotate(-20deg)
+.line4
+  transform: rotate(65deg)
+
+.line5
+  transform: rotate(33deg)
+
+.line6
+  transform: rotate(126deg)

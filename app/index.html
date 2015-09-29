@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--all links are relative protocol per DC add https: for local dev but remove before minify/deploy-->
+<head>
+  <meta charset="UTF-8">
+  <title>GP_RM_Brand_300x250</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript">
+	var clickTag = "https://www.google.com";
+</script>
+
+</head>
+
+<body>
+<div id="myAdLink" class="myAdLink ">	
+	<div id="myad" class="myad border">
+
+<h3>Hello Animation</h3>
+
+
+<!-- <div id="star-five" class="star-five">
+</div> -->
+
+
+<div id="animation" class="animation">
+	<div id="circlebox" class="circlebox">
+		<div id="circle" class="circle"></div>
+	</div>
+	<div id="line" class="line"></div>
+	<div id="line2" class="line2"></div>
+	<div class="smaller">
+		<div id="line3" class="line3"></div>
+		<div id="line4" class="line4"></div>
+	</div>
+	<div class="moresmaller">
+		<div id="line5" class="line5"></div>
+		<div id="line6" class="line6"></div>
+	</div>
+	
+</div><!-- animation -->
+
+		<div id="bottombar" class="bottombar">
+			<div id="logo" class="logo"></div>
+			<div id="shine" class="shine"></div>
+			<a href="#" id="button" class="button s">pew</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!--Added TweenMax to the DC CDN instead of using public, if it fails it's on DC CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<!-- <script src="/bower_components/gsap/src/uncompressed/TweenMax.js"></script> -->
+<!-- <script src="minified/TweenMax.min.js"></script> -->
+<script type="text/javascript">
+//instantiate a TimelineLite    
+var tl = new TimelineLite();
+
+var dltime = 0;
+
+// Line rotator 
+	tl.from("#animation", 1,  {scale:0}, "same");
+	tl.to("#animation", 1,  {scale:1}, "same");
+	// tl.from("#circle", 1,  {scale:0}, "same");
+	// tl.from("#circle", 1,  {scale:1}, "same");
+	tl.to("#animation", 1,  {scale:0});
+	tl.to("#line",  3,  {rotation:1000}, "same");
+	tl.to("#line2", 3,{rotation:1098}, "same");
+	tl.to("#line3", 3,  {rotation:1320}, "same");
+	tl.to("#line4", 3,{rotation:1405}, "same");
+	tl.to("#line5", 3,  {rotation:1713}, "same");
+	tl.to("#line6", 3,{rotation:1806}, "same");
+// Line rotator end 
+
+// Circle
+	tl.to("#circlebox", 3,  {width:200}, "same");
+	tl.to("#circle", 3,  {width:200}, "same");
+	tl.to("#circle", 3,  {height:200}, "same");
+	tl.from("#circle", 3,  {height:400});
+	tl.to("#circle", 3,  {height:0}, "same");
+
+	// tl.to("#animation", 5,  {scale:0}) "same";
+// Circle end
+
+// </script>
+</body>
+
+</html>

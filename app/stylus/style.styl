@@ -1,0 +1,141 @@
+$banner-width = 1010px;
+$banner-height = 1510px;
+
+@import "animation.styl"
+
+html * {
+  margin 0px
+  padding 0px
+  box-sizing border-box
+}
+
+body
+  margin 0
+  padding 0
+  font-family 'Open Sans', sans-serif
+  color white
+  background #292929
+h3{
+  padding 50px 0;
+  font-size 55px;
+  text-align center
+}
+.border
+  border 1px solid #000
+  display none
+
+.myad
+  width $banner-width
+  height $banner-height
+  position relative
+  overflow hidden
+  margin 0 auto
+
+  display block
+
+.bottombar
+  position absolute;
+  width $banner-width
+  height 50px
+  bottom 0px
+  background linear-gradient(to bottom, rgba(2,68,136,1) 0%, rgba(3,100,150,1) 52%, rgba(2,68,136,1) 100%)
+
+.shine
+  position absolute
+  top 0
+  left 0
+  background rgba(255,255,255,0)
+  background-repeat no-repeat
+  background linear-gradient(135deg, rgba(255,255,255,0) 22%, rgba(255,255,255,.5) 49%, rgba(255,255,255,0) 76%)
+  background-repeat no-repeat
+  border-radius 10px
+  z-index 9999
+
+.shine
+  width 125px
+  height 45px
+  background-size 116px 25px
+  background-position -78px 0
+
+.logo {
+  width 100px
+  height 50px
+  background green
+  float left
+}
+.button {
+  border:1px solid #1090c3;
+  background-color: #1ab0ec; 
+  background-image: linear-gradient(to bottom, #1ab0ec, #f09);
+  display block
+  float right
+  width 70px
+  margin-right 16px;
+  margin-top 10px;
+  text-align center
+  text-decoration none
+  height 30px
+  border-radius 5px;
+  color white  
+}
+
+
+
+p.pew
+  display block
+  column-count: 2
+  background green
+  column-fill initial
+  
+
+  
+
+#star-five {
+ margin: 50px 0;
+ position: relative;
+ display: block;
+ color: red;
+ width: 0px;
+ height: 0px;
+ border-right:  100px solid transparent;
+ border-bottom: 70px  solid red;
+ border-left:   100px solid transparent;
+ -moz-transform:    rotate(35deg);
+ -webkit-transform: rotate(35deg);
+ -ms-transform:     rotate(35deg);
+ -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
